@@ -1,0 +1,41 @@
+.box{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: blue;
+}
+
+.box3{
+    background-color: green;
+}
+
+/*
+    position: static;
+Eles permanecem na mesma posição
+
+    position: relative;
+    top, right, bottom, left, z-index;
+Ele muda a posição de 1 elemento mas não afeta os outros.
+
+    position: absolute;
+    sai do fluxo normal e entra em um novo fluxo;
+    fica como se fosse outra camada (pode sobrepor outros elementos)
+    em relação a pagina
+    se ele é filho de alguem, se comporta como absoluto do pai,
+    ou seja, se o pai é relative, ele é absoluto do pai
+
+    position: fixed;
+    fica fixo na pagina, se scroll -> fica fixo na tela
+
+    element stacking
+    a ultima div tem mais força, aparece na frente
+    z-index:(numero da camada);
+    numero maior -> tem mais força
+    */
