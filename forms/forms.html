@@ -15,7 +15,60 @@
     post: os dados ficam escondidos (sem ser na url)
     criação de usuarios!!
     NAO SE CRIA FORM DENTRO DE FORM!!-->
+        <fieldset>
+            <legend>Contato</legend>
 
+            <label for="tel">Nome</label>
+            <!--label associa e identifica tag de entrada
+            de dados
+            - acessibilidade-
+            for: se usado linka o elemento ao elemento que
+            é colocado na id (quando elemento estpa fora do fieldset)
+            -->
+            <input type="text">
+
+            <button type="submit">Enviar</button>
+            <!-- type: submit -> envia formulario
+            type: reset -> limpa forms
+            autofocus: qdo da enter, entra nele
+            só um por pagina!!
+            disabled - no caso de preencher ate o final fica desabilitado
+            name: receber o valor
+            value: valor antes de clicar
+            form: linka com o form -->
+
+
+            <input type="password"
+            minlength="5"
+            maxlength="10"
+            pattern="0-9a-fA-F{4,8}"
+            >
+            <!--
+                inputmode="numeric"
+                - altera o uso do teclado em smartphones
+                
+            -->
+        </fieldset>
+            <input id="tel" type="text">
+            <!-- autocomplete="email"
+            no navegador ele sugere seu email mais usado
+            required - obrigatorio
+            placeholder (password, search, tel, text, url)
+
+            -->
+            
+            <input type="text"
+            list="fruitsdata"
+            placeholder="Escolha uma fruta">
+
+            <datalist id="fruitsdata">
+                <option>apple</option>
+                <option value="">banana</option>
+            </datalist>
+            <!--
+                verificar compatibilidade com o browser
+                https://caniuse.com
+            -->
     </form>
 </body>
 </html>
